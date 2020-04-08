@@ -8,7 +8,6 @@ public class MyDBHelper extends SQLiteOpenHelper {
     private static final String DBNAME="Mydb.db";
     private static final int DBVERSION=1;
 
-
     public MyDBHelper(Context context){
         super(context,DBNAME, null,DBVERSION);
 
