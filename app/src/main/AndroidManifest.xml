@@ -9,15 +9,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AddAccountActivity"></activity>
-        <activity android:name=".AccountManagementActivity">
+        <activity android:name=".CRUDGenreActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".GenreManagementActivity">
+
+        </activity>
+        <activity android:name=".AddAccountActivity" />
+        <activity android:name=".AccountManagementActivity"></activity>
+        <activity android:name=".MainActivity" />
+
+        <provider
+            android:name=".provider.MovieStoreProvider"
+            android:authorities="com.example.databasetutorials.provider.MovieStoreProvider"
+            android:enabled="true"
+            android:exported="true" />
     </application>
 
 </manifest>
